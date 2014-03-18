@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discography>
+<release>
+	<title>Cherushii - Queen of Cups EP</title>
+	<label>100% Silk SILK056, 2013</label>
+	<artwork>queenofcups1.jpg</artwork>
+	<links>
+		<link type='info'>http://www.listentosilk.com</link>
+	</links>
+</release>
+<release>
+	<title>Faith in Bass - Blau Zwischen Grau</title>
+	<label>Nude Photo Music NPM 10015, 2011</label>
+	<artwork>faithinbass1.jpg</artwork>
+	<links>
+		<link type='info'>http://www.nudephotomusic.com/artists/faith-in-bass</link>
+		<link type='buy'>http://www.beatport.com/release/blau-zwischen-grau/838949</link>
+	</links>
+</release>
+<release>
+	<title>Easystreet - International Supernatural</title>
+	<label>Tip Records 001, 2010</label>
+	<artwork>easystreet1.jpg</artwork>
+	<links>
+		<link type='info'>http://www.easystreetmusic.net</link>
+		<link type='buy'>http://easystreet.bandcamp.com/album/international-supernatural</link>
+	</links>
+</release>
+<release>
+	<title>C. Faith - Free Spirit Lost Soul</title>
+	<label>SubSensory Recordings SSR 012, 2009</label>
+	<artwork>cfaith1.jpg</artwork>
+	<links>
+		<link type='buy'>http://www.beatport.com/release/free-spirit-lost-soul-ep/156470</link>
+	</links>
+</release>
+</discography>

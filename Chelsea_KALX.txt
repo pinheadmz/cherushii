@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shows>
+
+	<intro>Cherushii performs live using a table full of hardware electronics, including one-of-a-kind and specially customized pieces. The heart of her setup is the Yamaha RS7000 sequencer, which she has been using to write music since 2002.</intro>
+
+
+
+
+	<show>
+		<title> Friday March 14 San Francisco, CA - Pulse Generator @ Underground SF (DJ Set)</title>
+		<link>https://www.facebook.com/events/1393941047541474/</link>
+	</show>
+
+</shows>

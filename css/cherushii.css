@@ -1,0 +1,553 @@
+/*
+***************************************
+*  designed by MATTHEW ZIPKIN 2012    *
+* matthew(dot)zipkin(at)gmail(dot)com *
+***************************************
+*/
+
+/* http://colorschemedesigner.com/#4M61W--rGw0w0 */	
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+	font-family: 'questrialregular';
+	width: 100%;
+	height: 100%;
+	background-color: #45116F;
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+#BG, #BG2{
+	position: relative;
+	display: block;
+	z-index: -200;
+	background-image: url('../i/BG3.jpg');
+	height: 1085px;
+	background-repeat:  no-repeat;
+	background-position: center top;
+	margin: auto;
+}
+
+#BG2{
+	-webkit-transform: rotate(180deg);
+	height: 1085px;
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#BGc{
+	position: absolute;
+	display: block;
+	height: 2200px;
+	top: 0px;
+	min-width: 1000px;
+	left: 0px;
+	right: 0px;
+}
+
+#headerc{
+	width: 100%;
+}
+
+#headerc:hover{
+	cursor: pointer;
+}
+
+#header{
+	font-family: 'jera_sans_jlregular';
+	/* font-weight: bold; */
+	line-height: 40px;
+	width: 1000px;
+	height: 380px;
+	color: white;
+	text-align: center;
+	margin: 10px auto;
+}
+
+#headertxt{
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	top: 195px;
+	left: 110px;
+	/* font-weight: bold; */
+	font-size: 120px;
+	letter-spacing: 8px;
+}
+
+#header span{
+	font-size: 35px;
+	float: right;
+	font-family: 'CodeProDemoRegular';
+	color: #D2DBFF;
+	margin: 30px 0px 0px 0px;
+	letter-spacing: 1px;
+}
+
+#headerpic{
+	position: relative;
+	display: inline-block;
+	/*display: inline; */
+	float: left;
+	height: 200px;
+	width: 200px;
+	
+	background-image: url('../i/chelseaTop.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 200px;
+
+	-moz-box-shadow:    inset 0 0 75px #ffffff;
+	-webkit-box-shadow: inset 0 0 75px #ffffff;
+	box-shadow:         inset 0 0 75px #ffffff;
+}
+
+#headerpic img{
+	height: 100%;
+}
+
+
+#menuc{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+#menu{
+	display: block;
+	position: relative;
+	width: 1000px;
+	margin: 0px auto;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.menuButton{
+	display: inline-block;
+	*display: inline;
+	padding: 0px 15px 5px 15px;
+
+
+	font-family: 'CodeProDemoRegular';
+	font-size: 30px;
+	color: white;
+	/*border-left: 1px solid black;
+	border-right: 1px solid black;*/
+}
+
+.menuButton:hover{
+	color: black;
+	/* background-color: grey; */
+	cursor: pointer;
+
+	-moz-box-shadow:    inset 0px 0px 30px 10px #E9FAFF;
+	-webkit-box-shadow: inset 0px 0px 30px 10px #E9FAFF;
+	box-shadow:         inset 0px 0px 30px 10px #E9FAFF;
+	
+    border-radius: 15px;
+	
+}
+
+.content{
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	text-align: center;
+	margin: 0px auto;
+}
+
+#newsC{
+	left: 5px;
+	visibility: visible;
+}
+
+
+.section{
+	font-family:'CodeProDemoRegular';
+	font-size: 30px;
+	color: white;
+	background-color: grey;
+	border-radius: 100px;
+	padding: 5px;
+	border: 1px solid black;
+	width: 320px;
+}
+
+#mainc{
+	width: 100%;
+}
+
+#main{
+	position: relative;
+	display: block;
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#videoC{
+	width: 340px;
+}
+
+.youtubelink, .soundcloudlink, .youtubelinkF, .soundcloudlinkF{
+	display: block;
+	height: 100px;
+	width: 300px;
+	padding: 5px;
+	margin: 5px auto;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+.youtubelink:hover, .soundcloudlink:hover, .youtubelinkF:hover, .soundcloudlinkF:hover{
+	border: 1px solid black;
+	background-color: #E9FAFF;
+	cursor: pointer;
+
+}
+
+.youtubelink span, .soundcloudlink span, .youtubelinkF span, .soundcloudlinkF span{
+	font-size: 20px;
+}
+
+.youtubelink img, .youtubelinkF img{
+	float: left;
+}
+
+.soundcloudlink img, .soundcloudlinkF img{
+	float: left;
+	width: 90px
+}
+
+#videotarget, #audiotarget{
+	position: absolute;
+	display: inline-block;
+	*display: inline;
+	left: 345px;
+	top: 45px;
+	border: 3px solid black;
+	background-color: grey;
+	text-align: center;
+	width: 640px;
+	height: 360px;
+}
+
+#audiotarget{
+	height: 166px;
+}
+
+#videotarget span, #audiotarget span{
+	position: relative;
+	top: 150px;
+	color: white;
+	font-size: 20px;
+}
+
+#audiotarget span{
+	top: 70px;
+}
+
+#photosC{
+	width: 1000px;
+}
+
+#photosC img{
+	width: 200px;
+	display: inline;
+	margin: 10px;
+	border: 3px solid white;
+	opacity: 0.8;
+}
+
+#photosC img:hover{
+	border: 3px solid grey;
+	cursor: pointer;
+	opacity: 1.0;
+
+	-moz-box-shadow:    0px 0px 5px 5px #E9FAFF;
+	-webkit-box-shadow: 0px 0px 5px 5px #E9FAFF;
+	box-shadow:         0px 0px 5px 5px #E9FAFF;
+}
+
+#photosC img.zoomIn{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 200;
+
+	width: 960px;
+	opacity: 1;
+	border: 3px solid grey;
+
+	transition: width 1s;
+	-moz-transition: width 1s; /* Firefox 4 */
+	-webkit-transition: width 1s; /* Safari and Chrome */
+	-o-transition: width 1s; /* Opera */
+}
+
+#blogc{
+	display: block;
+	position: absolute;
+	*left: 0px;
+	text-align: center;
+	top: 0px;
+	left: 10px;
+}
+
+#newsC h2{
+	font-family:'CodeProDemoRegular';
+	font-size: 30px;
+	color: black;
+	text-decoration: underline;
+}
+
+#blog{
+	width: 530px;
+	height: 1600px;
+	overflow: auto;
+	text-align: justify;
+	padding: 10px;
+	margin: 0px 0px 0px 0px;
+}
+
+#blog h1{
+	font-size: 30px;
+	display: inline;
+}
+
+#blog img, #blog table, #blog iframe, #blog td, #blog tr, #blog th,
+#blog span, #blog div, #blog audio, #blog video, #blog canvas, #blog form{
+	max-width: 480px;
+}
+
+.blogShare{
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	width: 60px;
+	float: right;
+}
+
+#header>.blogShare{
+	top: 40px;
+	left: -20px;
+}
+
+
+@-moz-document url-prefix() {
+#header>.blogShare{
+	top: 55px;
+	left: -20px;
+}
+}
+
+
+.blogShare img{
+	width: 25px;
+}
+
+#newsC{
+	width: 1000px;
+}
+
+.featured{
+	position: absolute;
+	display: inline-block;
+	*display: inline;
+	left: 580px;
+	top: 45px;
+	width: 400px;
+}
+
+#featuredA{
+	top: 0px;
+}
+
+#featuredS{
+	top: 180px;
+}
+
+#featuredShow{
+	font-size: 25px;
+}
+
+#KALX{
+	top: 360px;
+}
+
+#bookingC{
+	position: absolute;
+	display: inline-block;
+	*display: inline;
+	left: 530px;
+	top: 45px;
+	width: 400px;
+}
+
+#bookingText{
+	font-size: 27px;
+	text-align: center;
+	padding: 0px 13px 0px 13px;
+}
+
+#bookingText a{
+	font-size: 35px;
+}
+
+#newsC .section{
+	visibility: hidden;
+}
+
+#bioC{
+	width: 980px;
+	font-size: 20px;
+}
+
+.bioText{
+	position: relative;
+	text-align: justify;
+	/* white-space: pre-wrap; */
+	font-size: 26px;
+	padding: 20px;
+	/* top: -50px; */
+}
+
+.photosText{
+	text-align: left !important;
+	/* top: 0px !important; */
+}
+
+.photoGallery img{
+	border: 8px solid white;
+	margin: 15px;
+}
+
+.photoGallery img:hover{
+	border: 8px solid rgb(133, 50, 209);
+}
+
+#bioPic{
+	padding: 11px;
+	background-image: url('../i/chelseaBio.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin: 10px;
+/*
+	-moz-box-shadow:    inset 0 0 75px #ffffff;
+	-webkit-box-shadow: inset 0 0 75px #ffffff;
+	box-shadow:         inset 0 0 75px #ffffff;
+*/
+}
+
+#contactC{
+	width: 1000px;
+	font-size: 30px;
+}
+
+.front{
+	background-color: #ccc;
+	border-radius: 15px;
+}
+
+#linksC ul{
+	font-size: 30px;
+	list-style-type: none;
+	text-align: left;
+}
+
+#grey{
+	width: 1000px;
+	height: 1700px;
+	position: absolute;
+	display: block;
+	background-color: rgba(238, 238, 238, 0.5);
+	border-radius: 15px;
+	top: -10px;
+}
+
+#discographyC{
+margin: 20px 0px 0px 20px;
+}
+
+#discography img{
+	float: left;
+	width: 130px;
+}
+
+.discographyItem{
+	height: 130px;
+	width: 800px;
+	font-size: 30px;
+	line-height: 35px;
+	padding: 10px;
+}
+
+.discographyItem h1{
+	font-size: 35px;
+}
+
+.discographyItem a{
+	margin: 0px 0px 0px 10px;
+}
+
+#contactText{
+	margin: 25px 0px 0px 0px;
+	line-height: 40px;
+}
+
+#liveInfo{
+	text-align: center;
+	margin: 20px auto;
+	width: 800px;
+}
+
+#liveInfo img{
+}
+
+.showsItem{
+	font-size: 35px;
+}
+
+#showsInfo{
+	font-size: 30px;
+	width: 90%;
+	margin: auto;
+	text-align: justify;
+}
+
+#showsC .section{
+	margin: auto;
+}
+
+#liveInfo span{
+	font-size: 10px;
+	float: right;
+}
