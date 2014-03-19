@@ -23,6 +23,10 @@
 
 	// shows calendar text file
 	$showsTxt = 'Chelsea_Shows.txt';
+	
+	// KALX calendar text file
+	$kalxTxt = 'Chelsea_KALX.txt';
+
 
 	// discography text file and artwork directory name
 	$discographyTxt = 'Chelsea_Discography.txt';
@@ -133,12 +137,29 @@
 					<h2>Upcoming Events:</h2>
 					<div id='featuredShow' class='showsItem'></div>
 				</div>
-				<? /*
+				
+				<!-- KALX ********************************** -->
+				<? $kalxDOM = @simplexml_load_file($kalxTxt); ?>
 				<div id='KALX' class='featured front'>
-					<h2>Upcoming Radio Shows On KALX:</h2>
-					<div id='kalxItem' class='showsItem'>Tue 3/25 11:59pm - 1am</div>
+					<h2>Upcoming Radio <br>Shows On <a href="http://kalx.berkeley.edu" target="_blank">KALX</a>:</h2>
+					
+				<?
+					foreach ($kalxDOM->show as $show){
+						echo "<div class='kalxItem'>";
+						if ($show->title) {
+							echo $show->title;
+							echo ":<br>";
+						}
+						if ($show->when) {
+							echo $show->when;
+						}
+						echo "<br>&bull;</div>";
+					}
+				?>
+						
+							
 				</div>
-				*/ ?>
+				
 				
 <!-- *************************** front page contact / booking ****************************** -->
 <!--

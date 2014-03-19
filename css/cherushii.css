@@ -179,6 +179,8 @@ body{
 	display: block;
 	text-align: center;
 	margin: 0px auto;
+	height: 1670px;
+	overflow: hidden;
 }
 
 #newsC{
@@ -310,9 +312,9 @@ body{
 }
 
 #blogc{
-	display: block;
-	position: absolute;
-	*left: 0px;
+	display: inline-block;
+	position: relative;
+	float: left;
 	text-align: center;
 	top: 0px;
 	left: 10px;
@@ -375,20 +377,16 @@ body{
 }
 
 .featured{
-	position: absolute;
+	position: relative;
 	display: inline-block;
-	*display: inline;
-	left: 580px;
-	top: 45px;
 	width: 400px;
+	margin-bottom: 20px;
 }
 
 #featuredA{
-	top: 0px;
 }
 
 #featuredS{
-	top: 180px;
 }
 
 #featuredShow{
@@ -396,7 +394,6 @@ body{
 }
 
 #KALX{
-	top: 360px;
 }
 
 #bookingC{
@@ -550,4 +547,9 @@ margin: 20px 0px 0px 20px;
 #liveInfo span{
 	font-size: 10px;
 	float: right;
+}
+
+.kalxItem{
+	font-size: 20px;
+	margin-top: 10px;
 }
