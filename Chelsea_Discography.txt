@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <discography>
 <release>
+	<title>Cherushii - Memory Of Water</title>
+	<label>100% Silk SILK085, 2015</label>
+	<artwork>memoryofwater.jpg</artwork>
+	<links>
+	
+		<link type='buy'>https://midheaven.com/item/memory-of-water-by-cherushii#.Vcpp0xNViko</link>
+	</links>
+</release>
+<release>
+	<title>Cherushii - Starlight Express EP</title>
+	<label>Self Released QOC002, 2015</label>
+	<artwork>starlightexpress.jpg</artwork>
+	<links>
+	
+		<link type='buy'>https://cherushii.bandcamp.com/album/starlight-express-ep</link>
+	</links>
+</release>
+<release>
+	<title>Cherushii - Nobody's Fool EP</title>
+	<label>Self Released QOC001, 2015</label>
+	<artwork>nobodysfool.jpg</artwork>
+	<links>
+	
+		<link type='buy'>https://cherushii.bandcamp.com/album/nobodys-fool-ep</link>
+	</links>
+</release>
+<release>
 	<title>Cherushii - Queen of Cups EP</title>
 	<label>100% Silk SILK056, 2013</label>
 	<artwork>queenofcups1.jpg</artwork>
 	<links>
 		<link type='info'>http://www.listentosilk.com</link>
+		<link type='buy'>https://midheaven.com/item/queen-of-cups-by-cherushii-12#.VcUUrBNViko</link>
 	</links>
 </release>
 <release>

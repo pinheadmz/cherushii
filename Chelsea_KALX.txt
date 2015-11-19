@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shows>
+
+	
+		
+				
+	
+			
+			
+			
+		
 	
 	<show>
-		<title> Midnight Express Italo Disco Special</title>
-		<when>Tue 3/25 11:59pm - 1am</when>
+		<title>Thursday Dec. 10</title>
+		<when>9:30pm-midnight</when>
 	</show>
-	
 	<show>
-		<when>Thu 3/27 9:30pm - 12am</when>
+		<title>Thursday Jan. 7</title>
+		<when>9:30pm-midnight</when>
 	</show>
-	
-	
-	
 </shows>

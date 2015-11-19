@@ -13,7 +13,8 @@
 
 	// photo directories
 	$picDir = 'Chelsea_Photos';
-	$thumbDir = $picDir . '/thumbs'; // thumbnail directory must be called 'thumbs' and all thumbs must start with 't'
+	$picSubDir = array('2015', '2013');
+	//$thumbDir = $picDir . '/thumbs'; // thumbnail directory must be called 'thumbs' and all thumbs must start with 't'
 
 	// webloc directory
 	$linksDir = 'Chelsea_Links';
@@ -128,11 +129,12 @@
 					<div id='featuredVideo' class='youtubelinkF'></div>
 				</div>
 -->
+<!--
 				<div id='featuredA' class='featured front'>
 					<h2>Latest Release:</h2>
 					<div id='featuredAudio' class='soundcloudlinkF'></div>
 				</div>
-
+-->
 				<div id='featuredS' class='featured front'>
 					<h2>Upcoming Events:</h2>
 					<div id='featuredShow' class='showsItem'></div>
@@ -187,21 +189,28 @@
 				<div class='section'>Press Photos</div>
 				<div class='bioText photosText'>Click to download high resolution images...</div>
 				<div class='photoGallery'>
-					<? 
-						$picDirTitle = $picDir;
-						$picDir = opendir($picDir);
-						$thumbDirTitle = $thumbDir;
-						$thumbDir = opendir($thumbDir);
+					<? 	
+						foreach ($picSubDir as $subDir){
+						
+							$picDirTitle = $picDir .'/'. $subDir;
+							$thisLoopPicDir = opendir($picDir .'/'. $subDir);
+							//$thumbDirTitle = $thumbDir .'/'. $subDir;
+							//$thumbDir = opendir($thumbDir .'/'. $subDir);
 					
-						while (false !== ($entry = readdir($picDir))){
-							if ($entry != '.' && $entry != '..'  && $entry != 'thumbs' ){
-								echo '<a href="' . $picDirTitle . '/' . $entry . '" target="_blank">';
-								echo '<img src="' . $picDirTitle . '/thumbs/t' . $entry . '">';
-								echo '</a>';
-							}		
-						}
-						closedir($picDir);
+							echo "<span	class='bioText photosText'>" . $subDir . ":</span><br>";
+					
+							while (false !== ($entry = readdir($thisLoopPicDir))){
+								if ($entry != '.' && $entry != '..'  && $entry != 'thumbs' ){
+									echo '<a href="' . $picDirTitle . '/' . $entry . '" target="_blank">';
+									echo '<img src="' . $picDirTitle . '/thumbs/t' . $entry . '">';
+									echo '</a>';
+								}		
+							}
+							closedir($picDir);
+							
+							echo "<br><hr><br>";
 									
+						}
 					?>
 				</div>				
 
@@ -296,15 +305,24 @@
 */ ?>
 
 <!-- *************************** audio ****************************** -->
-			<? $soundcloudFILE = @file_get_contents($soundcloudWWW); 
+			<? 
+			/*
+			$soundcloudFILE = @file_get_contents($soundcloudWWW); 
 			$scDOM = new DOMDocument;
 			@$scDOM->loadHTML($soundcloudFILE);
-			$divs = $scDOM->getElementsByTagName('div'); ?>
+			$divs = $scDOM->getElementsByTagName('div'); 
+			*/
+			?>
 
 			<div id='audioC' class='content'>
 				<div class='section'>Sounds</div>
-
-				<? $j=0; foreach ($divs as $div):
+				<br>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/30552470&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				
+				
+				<? 
+				/*
+				$j=0; foreach ($divs as $div):
 				if ( $div->hasAttribute('data-sc-track') && ($div->getAttribute('class') == 'medium mode player') ){
 					// grab soundcloud id number for player widget
 					$scID = $div->getAttribute('data-sc-track');
@@ -323,10 +341,22 @@
 
 					if(++$j > 5) break;
 				}
-				endforeach ?>
-
+				endforeach 
+				*/
+				?>
+				
+				<?
+				/*
 				<div id="audiotarget"><span>select a track</span></div>
+				*/
+				?>
+				
+				
 			</div>
+			
+			
+			
+			
 
 <!-- ***************************** links **************************** -->
 <? /*

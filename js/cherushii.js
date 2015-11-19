@@ -153,7 +153,10 @@ function loadVideo(video)
 // ***** loads a soundcloud player into the player area
 function loadAudio(audio)
 {
-	var audioHtml = "<iframe width='100%' height='166' scrolling='no' frameborder='no' src='http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F" + audio + "&amp;auto_play=false&amp;show_artwork=true&amp;color=45116F'></iframe>"
+	// var audioHtml = "<iframe width='100%' height='166' scrolling='no' frameborder='no' src='http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F" + audio + "&amp;auto_play=false&amp;show_artwork=true&amp;color=45116F'></iframe>"
+	var audioHtml = "<iframe width='100%' height='166' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + audio + "&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false'></iframe>";
+
+
 
 	$('#audiotarget').html(audioHtml);
 }
